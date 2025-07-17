@@ -1,0 +1,285 @@
+/* General Body Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa; /* Light background for overall page */
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-color: #212529; /* Dark background */
+  color: #f8f9fa; /* Light text */
+  padding: 80px 0; /* More vertical padding */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .display-4 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section .btn-primary {
+  background-color: #007bff; /* Bootstrap primary blue */
+  border-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.hero-section .btn-outline-light {
+  border-color: #f8f9fa;
+  color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn-outline-light:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.avatar-img {
+  width: 200px; /* Fixed width for avatar */
+  height: 200px; /* Fixed height for avatar */
+  object-fit: cover; /* Ensure image covers the area */
+  border-color: #6c757d !important; /* Darker border for contrast */
+}
+
+/* Section Backgrounds */
+#about,
+#experience-education,
+#projects {
+  background-color: #f8f9fa; /* Light gray */
+}
+
+#interests,
+#skills,
+#featured-project {
+  background-color: #ffffff; /* White */
+}
+
+/* Headings */
+h2.display-5 {
+  font-size: 2.5rem;
+  color: #343a40;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-title {
+  color: #343a40;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+/* Interests Section Icons */
+#interests .card-body i {
+  color: #007bff; /* Primary blue for icons */
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #dee2e6;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:before,
+.timeline-item:after {
+  content: "";
+  display: table;
+}
+
+.timeline-item:after {
+  clear: both;
+}
+
+.timeline-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+.timeline-content {
+  width: calc(50% - 20px);
+  float: left;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  position: relative;
+}
+
+.timeline-content:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content:before {
+  left: -10px;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #343a40;
+}
+
+.timeline-content ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.timeline-content ul li {
+  margin-bottom: 5px;
+}
+
+/* Skills Badges */
+.badge {
+  padding: 0.6em 0.9em;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  white-space: nowrap; /* Prevent wrapping for single skills */
+}
+
+.badge.bg-secondary {
+  background-color: #e9ecef !important; /* Light gray for skills */
+  color: #495057 !important;
+}
+
+.badge.bg-info {
+  background-color: #d1ecf1 !important; /* Light blue for project tech */
+  color: #0c5460 !important;
+}
+
+.badge.bg-success {
+  background-color: #d4edda !important; /* Light green for featured project tech */
+  color: #155724 !important;
+}
+
+/* Project Buttons */
+.btn-outline-dark {
+  border-color: #343a40;
+  color: #343a40;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Featured Project Section */
+#featured-project .card {
+  border: 1px solid #007bff; /* Highlight with primary color border */
+}
+
+#featured-project .card-title {
+  color: #007bff;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40 !important; /* Dark gray */
+  color: #f8f9fa;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #007bff; /* Highlight on hover */
+}
+
+/* Responsive Adjustments for Timeline */
+@media (max-width: 767.98px) {
+  .timeline:before {
+    left: 20px; /* Align timeline line to the left */
+  }
+
+  .timeline-icon {
+    left: 20px; /* Align icons to the left */
+    transform: translateX(-50%);
+  }
+
+  .timeline-content {
+    width: calc(100% - 60px); /* Adjust content width */
+    float: right; /* Always float right for smaller screens */
+    margin-left: 60px; /* Push content to the right of the line */
+  }
+
+  .timeline-content:before {
+    left: -10px; /* Adjust arrow position */
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+}

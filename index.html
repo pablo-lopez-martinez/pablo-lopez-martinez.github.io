@@ -1,350 +1,655 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Lopez Martínez - Software Engineer</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pablo Lopez Martínez - Portafolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Lucide Icons for basic icons, loaded via CDN for simplicity -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-items">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#interests" class="nav-link">Interests</a>
+        <a href="#experience-education" class="nav-link">Experience</a>
+        <a href="#technical-skills" class="nav-link">Technical Skills</a>
+        <a href="#soft-skills" class="nav-link">Soft Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section text-white text-center py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8 mx-auto">
-                    <h1 class="display-4 fw-bold mb-3">Hi, I'm Pablo Lopez Martínez.</h1>
-                    <p class="lead mb-4">Software Engineer and AI Enthusiast.</p>
-                    <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
-                        <a href="mailto:pablolm.dev@gmail.com" class="btn btn-primary btn-lg">
-                            <i class="fas fa-envelope me-2"></i> Contact Me
-                        </a>
-                        <a href="https://linkedin.com/in/pablo-lopez-martinez" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg social-icon">
-                            <i class="fab fa-linkedin-in"></i><span class="visually-hidden">LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/pablo-lopez-martinez" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg social-icon">
-                            <i class="fab fa-github"></i><span class="visually-hidden">GitHub</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center mt-4 mt-md-0">
-                    <img src="/placeholder.svg?height=256&width=256" alt="Pablo Lopez Martínez" class="img-fluid rounded-circle border border-4 border-secondary avatar-img">
-                </div>
-            </div>
+  <!-- Hero Section -->
+  <header class="hero-section section-wrapper animated-gradient-bg" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>
+            Hi, I'm
+            <span class="gradient-text">Pablo Lopez Martínez.</span>
+          </h1>
+          <p>Software Engineer and AI Enthusiast.</p>
+          <div class="hero-buttons">
+            <a href="mailto:pablolm.dev@gmail.com" class="button primary">
+              <i data-lucide="mail" class="icon"></i> Contact Me
+            </a>
+            <a
+              href="https://github.com/pablo-lopez-martinez"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button outline"
+            >
+              <i data-lucide="github" class="icon"></i> GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/pablo-lopez-martinez"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button outline"
+            >
+              <i data-lucide="linkedin" class="icon"></i> LinkedIn
+            </a>
+          </div>
         </div>
-    </header>
-
-    <main>
-        <!-- About Section -->
-        <section id="about" class="py-5 bg-light">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-10">
-                        <h2 class="display-5 fw-bold mb-4">Who Am I?</h2>
-                        <p class="lead text-muted">
-                            I am Pablo López Martínez, a recent Computer Science graduate from the University of A Coruña’s bilingual program, with a strong passion for software engineering. My academic background has provided me with a solid foundation in backend development, distributed systems, and intelligent systems, with hands-on experience gained through personal projects and coursework.
-                        </p>
-                        <p class="lead text-muted">
-                            I am particularly interested in building scalable and efficient backend architectures, as well as exploring innovative solutions in artificial intelligence and machine learning. Although I am at the start of my professional career, I am highly motivated to apply my knowledge in real-world environments and continuously expand my skill set.
-                        </p>
-                        <p class="lead text-muted">
-                            Proficient in Python, Java, and related technologies, I value clean code, system design, and effective collaboration. I look forward to connecting with professionals in the industry to learn, grow, and contribute to impactful projects.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interests Section -->
-        <section id="interests" class="py-5 bg-white">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-10">
-                        <h2 class="display-5 fw-bold mb-4">My Interests</h2>
-                        <p class="lead text-muted">I am passionate about various areas within computer science, constantly seeking to learn and innovate.</p>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                    <div class="col">
-                        <div class="card h-100 shadow-sm text-center p-4">
-                            <div class="card-body">
-                                <i class="fas fa-code fa-3x text-primary mb-3"></i>
-                                <h5 class="card-title fw-bold">Backend Development</h5>
-                                <p class="card-text text-muted">Building scalable, efficient, and robust backend architectures with a focus on clean code and system design.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm text-center p-4">
-                            <div class="card-body">
-                                <i class="fas fa-brain fa-3x text-primary mb-3"></i>
-                                <h5 class="card-title fw-bold">Artificial Intelligence</h5>
-                                <p class="card-text text-muted">Exploring innovative solutions and applications in AI and Machine Learning.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm text-center p-4">
-                            <div class="card-body">
-                                <i class="fas fa-eye fa-3x text-primary mb-3"></i>
-                                <h5 class="card-title fw-bold">Computer Vision</h5>
-                                <p class="card-text text-muted">Developing systems that enable computers to "see" and interpret visual information.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm text-center p-4">
-                            <div class="card-body">
-                                <i class="fas fa-comments fa-3x text-primary mb-3"></i>
-                                <h5 class="card-title fw-bold">Natural Language Processing</h5>
-                                <p class="card-text text-muted">Working with technologies that allow computers to understand, interpret, and generate human language.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education & Experience Section -->
-        <section id="experience-education" class="py-5 bg-light">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-10">
-                        <h2 class="display-5 fw-bold mb-4">Education &amp; Experience</h2>
-                        <p class="lead text-muted">A timeline of my academic journey and professional experiences.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                                <div class="timeline-content">
-                                    <h3 class="fw-bold">University of A Coruña</h3>
-                                    <span class="text-muted">2020 – 2024</span>
-                                    <p>Computer Science degree, bilingual track, specialization in Computation</p>
-                                    <ul>
-                                        <li>Grade: 8.7/10</li>
-                                        <li>Awarded 6 Honors Distinctions in Database Systems, Discrete Mathematics, Algebra, Computer Fundamentals, Language Development and Final Degree Project.</li>
-                                        <li>Most Interesting Courses: Algorithms, Internet and Distributed Systems, Software Architecture, Machine Learning.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
-                                <div class="timeline-content">
-                                    <h3 class="fw-bold">Data Analyst Intern, Indra</h3>
-                                    <span class="text-muted">Feb 2025 – Act</span>
-                                    <ul>
-                                        <li>Large data sets were analyzed and processed using SQL to extract actionable insights for business decision-making.</li>
-                                        <li>Developed ETL processes to automate data extraction, transformation, and loading.</li>
-                                        <li>Built interactive dashboards and reports with Power BI and Streamlit to visualize key business metrics and trends.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon"><i class="fas fa-award"></i></div>
-                                <div class="timeline-content">
-                                    <h3 class="fw-bold">Padel Coach, SportMadness</h3>
-                                    <span class="text-muted">Nov 2023 – Present</span>
-                                    <p>Worked as a Tennis and Padel Coach, training both children and adults on weekends and at a summer camp.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon"><i class="fas fa-award"></i></div>
-                                <div class="timeline-content">
-                                    <h3 class="fw-bold">Galician Regional Debate Tournament</h3>
-                                    <span class="text-muted">2019</span>
-                                    <p>Participated in the Galician Regional Debate Tournament, reaching the quarterfinals.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon"><i class="fas fa-award"></i></div>
-                                <div class="timeline-content">
-                                    <h3 class="fw-bold">Academic Excellence Award in High School</h3>
-                                    <span class="text-muted">2018</span>
-                                    <p>Received the Academic Excellence Award during High School for outstanding academic performance.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="py-5 bg-white">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-10">
-                        <h2 class="display-5 fw-bold mb-4">My Skills</h2>
-                        <p class="lead text-muted">A comprehensive overview of my technical and soft skills.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center g-4">
-                    <div class="col-md-6">
-                        <div class="card h-100 shadow-sm p-4">
-                            <div class="card-body text-center">
-                                <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
-                                <h5 class="card-title fw-bold mb-3">Technical Skills</h5>
-                                <div class="d-flex flex-wrap justify-content-center gap-2">
-                                    <span class="badge bg-secondary text-dark">Python</span>
-                                    <span class="badge bg-secondary text-dark">Java</span>
-                                    <span class="badge bg-secondary text-dark">FastAPI</span>
-                                    <span class="badge bg-secondary text-dark">Docker</span>
-                                    <span class="badge bg-secondary text-dark">Git</span>
-                                    <span class="badge bg-secondary text-dark">SQL</span>
-                                    <span class="badge bg-secondary text-dark">C</span>
-                                    <span class="badge bg-secondary text-dark">Django</span>
-                                    <span class="badge bg-secondary text-dark">OCaml</span>
-                                    <span class="badge bg-secondary text-dark">Streamlit</span>
-                                    <span class="badge bg-secondary text-dark">Pandas</span>
-                                    <span class="badge bg-secondary text-dark">Matplotlib</span>
-                                    <span class="badge bg-secondary text-dark">OpenCV</span>
-                                    <span class="badge bg-secondary text-dark">NumPy</span>
-                                    <span class="badge bg-secondary text-dark">Power BI</span>
-                                    <span class="badge bg-secondary text-dark">API REST</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card h-100 shadow-sm p-4">
-                            <div class="card-body text-center">
-                                <i class="fas fa-users fa-3x text-primary mb-3"></i>
-                                <h5 class="card-title fw-bold mb-3">Soft Skills</h5>
-                                <div class="d-flex flex-wrap justify-content-center gap-2">
-                                    <span class="badge bg-secondary text-dark">Problem Solving</span>
-                                    <span class="badge bg-secondary text-dark">Effective Communication</span>
-                                    <span class="badge bg-secondary text-dark">Teamwork</span>
-                                    <span class="badge bg-secondary text-dark">Leadership</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-5 bg-light">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-10">
-                        <h2 class="display-5 fw-bold mb-4">My Projects</h2>
-                        <p class="lead text-muted">A selection of my personal and academic projects, showcasing my skills and interests.</p>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title fw-bold">House Price Prediction App</h5>
-                                <p class="card-text text-muted flex-grow-1">Interactive web app for housing market trend analysis and visualization. Implemented user authentication and role-based access for secure, personalized data.</p>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
-                                    <span class="badge bg-info text-dark">Python</span>
-                                    <span class="badge bg-info text-dark">Streamlit</span>
-                                    <span class="badge bg-info text-dark">FastAPI</span>
-                                    <span class="badge bg-info text-dark">Pandas</span>
-                                    <span class="badge bg-info text-dark">Matplotlib</span>
-                                </div>
-                                <a href="https://github.com/pablo-lopez-martinez/House-price-prediction" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark mt-auto">
-                                    <i class="fab fa-github me-2"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title fw-bold">Music Genre Classifier</h5>
-                                <p class="card-text text-muted flex-grow-1">A classifier that identifies music genres using various artificial intelligence techniques.</p>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
-                                    <span class="badge bg-info text-dark">Python</span>
-                                    <span class="badge bg-info text-dark">Machine Learning</span>
-                                    <span class="badge bg-info text-dark">Deep Learning</span>
-                                </div>
-                                <a href="https://github.com/pablo-lopez-martinez/Music-genre-clasificator" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark mt-auto">
-                                    <i class="fab fa-github me-2"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title fw-bold">Traffic Sign Detector</h5>
-                                <p class="card-text text-muted flex-grow-1">Built a real-time system to detect and classify road signs with high accuracy. Used shape and color filters to reduce false positives and boost robustness.</p>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
-                                    <span class="badge bg-info text-dark">Python</span>
-                                    <span class="badge bg-info text-dark">OpenCV</span>
-                                    <span class="badge bg-info text-dark">NumPy</span>
-                                    <span class="badge bg-info text-dark">Computer Vision</span>
-                                </div>
-                                <a href="https://github.com/pablo-lopez-martinez/Traffic-sign-detector" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark mt-auto">
-                                    <i class="fab fa-github me-2"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Project Section -->
-        <section id="featured-project" class="py-5 bg-white">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-10">
-                        <h2 class="display-5 fw-bold mb-4">Featured Project</h2>
-                        <p class="lead text-muted">My most significant project during my academic career.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="card shadow-lg">
-                            <div class="card-body text-center p-4">
-                                <h5 class="card-title display-6 fw-bold mb-3">Molecular Docking Web App</h5>
-                                <p class="card-text lead text-muted mb-4">Full-stack platform for molecular docking via natural language and 3D visualization. Integrated AutoDock Vina, OpenAI API, and 3Dmol.js for real-time molecule rendering.</p>
-                                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                                    <span class="badge bg-success text-white">Django</span>
-                                    <span class="badge bg-success text-white">Docker</span>
-                                    <span class="badge bg-success text-white">AutoDock Vina</span>
-                                    <span class="badge bg-success text-white">OpenAI API</span>
-                                    <span class="badge bg-success text-white">3Dmol.js</span>
-                                </div>
-                                <p class="text-muted mb-4">The backend is built with Django and Docker for scalable, reproducible deployments.</p>
-                                <a href="http://repo-bot.citic.udc.es/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-external-link-alt me-2"></i> View Live Demo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p class="mb-2">&copy; 2025 Pablo Lopez Martínez. All rights reserved.</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="mailto:pablolm.dev@gmail.com" class="text-white text-decoration-none"><i class="fas fa-envelope me-1"></i> Email</a>
-                <a href="https://linkedin.com/in/pablo-lopez-martinez" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none"><i class="fab fa-linkedin-in me-1"></i> LinkedIn</a>
-                <a href="https://github.com/pablo-lopez-martinez" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none"><i class="fab fa-github me-1"></i> GitHub</a>
-            </div>
+        <div class="hero-image">
+          <img
+            src="/placeholder.svg?height=256&width=256"
+            alt="Pablo Lopez Martínez"
+            class="profile-image"
+          />
         </div>
-    </footer>
+      </div>
+    </div>
+  </header>
 
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+  <main class="main-content">
+    <!-- About Section -->
+    <section id="about" class="section-wrapper">
+      <div class="container">
+        <div class="section-text-center">
+          <h2>Who Am I?</h2>
+          <p>
+            I am Pablo López Martínez, a recent Computer Science graduate from the University of A Coruña’s
+            bilingual program, with a strong passion for software engineering. My academic background has provided
+            me with a solid foundation in backend development, distributed systems, and intelligent systems, with
+            hands-on experience gained through personal projects and coursework.
+          </p>
+          <p>
+            I am particularly interested in building scalable and efficient backend architectures, as well as
+            exploring innovative solutions in artificial intelligence and machine learning. Although I am at the
+            start of my professional career, I am highly motivated to apply my knowledge in real-world environments
+            and continuously expand my skill set.
+          </p>
+          <p>
+            Proficient in Python, Java, and related technologies, I value clean code, system design, and effective
+            collaboration. I look forward to connecting with professionals in the industry to learn, grow, and
+            contribute to impactful projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="section-wrapper">
+      <div class="container">
+        <div class="section-text-center">
+          <h2>My Interests</h2>
+          <p>
+            I am passionate about various areas within computer science, constantly seeking to learn and innovate.
+          </p>
+        </div>
+        <div class="grid-4-cols">
+          <div class="card interest-card">
+            <i data-lucide="laptop-code" class="icon-large primary-text"></i>
+            <h3>Backend Development</h3>
+            <p>
+              Building scalable, efficient, and robust backend architectures with a focus on clean code and system
+              design.
+            </p>
+          </div>
+          <div class="card interest-card">
+            <i data-lucide="brain" class="icon-large primary-text"></i>
+            <h3>Artificial Intelligence</h3>
+            <p>Exploring innovative solutions and applications in AI and Machine Learning.</p>
+          </div>
+          <div class="card interest-card">
+            <i data-lucide="eye" class="icon-large primary-text"></i>
+            <h3>Computer Vision</h3>
+            <p>Developing systems that enable computers to "see" and interpret visual information.</p>
+          </div>
+          <div class="card interest-card">
+            <i data-lucide="message-square-text" class="icon-large primary-text"></i>
+            <h3>Natural Language Processing</h3>
+            <p>
+              Working with technologies that allow computers to understand, interpret, and generate human language.
+            </p>
+          </div>
+          <div class="card interest-card">
+            <i data-lucide="share-2" class="icon-large primary-text"></i>
+            <h3>Distributed Systems</h3>
+            <p>Designing and implementing systems that operate across multiple networked computers.</p>
+          </div>
+          <div class="card interest-card">
+            <i data-lucide="cloud" class="icon-large primary-text"></i>
+            <h3>Cloud Computing</h3>
+            <p>Leveraging cloud platforms for scalable and resilient application deployment.</p>
+          </div>
+          <div class="card interest-card">
+            <i data-lucide="blocks" class="icon-large primary-text"></i>
+            <h3>Microservices Architecture</h3>
+            <p>Building applications as a collection of small, independent services.</p>
+          </div>
+          <div class="card interest-card">
+            <i data-lucide="shield-check" class="icon-large primary-text"></i>
+            <h3>Backend Security</h3>
+            <p>Implementing robust security measures for server-side applications and data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Experience Section -->
+    <section id="experience-education" class="section-wrapper">
+      <div class="container">
+        <div class="section-text-center">
+          <h2>Education & Experience</h2>
+          <p>A timeline of my academic journey and professional experiences.</p>
+        </div>
+        <div class="timeline">
+          <!-- High School -->
+          <div class="timeline-item right">
+            <div class="timeline-icon">
+              <i data-lucide="school" class="icon-large"></i>
+            </div>
+            <div class="card timeline-card">
+              <h3>Maristas de A Coruña Institute</h3>
+              <p class="date">2014 – 2018</p>
+              <p class="description">High School Diploma</p>
+              <ul>
+                <li>Received the Academic Excellence Award for outstanding academic performance.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- University -->
+          <div class="timeline-item left">
+            <div class="timeline-icon">
+              <i data-lucide="graduation-cap" class="icon-large"></i>
+            </div>
+            <div class="card timeline-card">
+              <h3>University of A Coruña</h3>
+              <p class="date">2020 – 2024</p>
+              <p class="description">Computer Science degree, bilingual track, specialization in Computation</p>
+              <ul>
+                <li>Grade: 8.7/10</li>
+                <li>
+                  Awarded 6 Honors Distinctions in Database Systems, Discrete Mathematics, Algebra, Computer
+                  Fundamentals, Language Development and Final Degree Project.
+                </li>
+                <li>
+                  Most Interesting Courses: Algorithms, Internet and Distributed Systems, Software Architecture,
+                  Machine Learning.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Indra Intern -->
+          <div class="timeline-item right">
+            <div class="timeline-icon">
+              <i data-lucide="briefcase" class="icon-large"></i>
+            </div>
+            <div class="card timeline-card">
+              <h3>Software Engineer Intern, Indra</h3>
+              <p class="date">Feb 2025 – Act</p>
+              <ul>
+                <li>
+                  Large data sets were analyzed and processed using SQL to extract actionable insights for business
+                  decision-making.
+                </li>
+                <li>Developed ETL processes to automate data extraction, transformation, and loading.</li>
+                <li>
+                  Built interactive dashboards and reports with Power BI and Streamlit to visualize key business
+                  metrics and trends.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="technical-skills" class="section-wrapper">
+      <div class="container">
+        <div class="section-text-center">
+          <h2>Technical Skills</h2>
+          <p>My expertise in various programming languages, frameworks, and tools.</p>
+        </div>
+        <div class="grid-4-cols">
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="Python Logo" class="skill-logo" />
+                <h3>Python</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Python</h3>
+                <p>Versatile language for web, AI, and data science.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="Java Logo" class="skill-logo" />
+                <h3>Java</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Java</h3>
+                <p>Robust, object-oriented language for enterprise apps.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="FastAPI Logo" class="skill-logo" />
+                <h3>FastAPI</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>FastAPI</h3>
+                <p>Modern, fast web framework for building APIs with Python.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="Docker Logo" class="skill-logo" />
+                <h3>Docker</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Docker</h3>
+                <p>Containerization platform for consistent environments.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="Git Logo" class="skill-logo" />
+                <h3>Git</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Git</h3>
+                <p>Version control system for collaborative development.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="SQL Logo" class="skill-logo" />
+                <h3>SQL</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>SQL</h3>
+                <p>Standard language for managing relational databases.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="C Logo" class="skill-logo" />
+                <h3>C</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>C</h3>
+                <p>Powerful low-level language for system programming.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="Django Logo" class="skill-logo" />
+                <h3>Django</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Django</h3>
+                <p>High-level Python web framework for rapid development.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="OCaml Logo" class="skill-logo" />
+                <h3>OCaml</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>OCaml</h3>
+                <p>Functional programming language for robust applications.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="Streamlit Logo" class="skill-logo" />
+                <h3>Streamlit</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Streamlit</h3>
+                <p>Framework for quickly building data apps and dashboards.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="Pandas Logo" class="skill-logo" />
+                <h3>Pandas</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Pandas</h3>
+                <p>Data manipulation and analysis library for Python.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="Matplotlib Logo" class="skill-logo" />
+                <h3>Matplotlib</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Matplotlib</h3>
+                <p>Plotting library for creating static, animated, and interactive visualizations in Python.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="OpenCV Logo" class="skill-logo" />
+                <h3>OpenCV</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>OpenCV</h3>
+                <p>Library for computer vision and image processing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="NumPy Logo" class="skill-logo" />
+                <h3>NumPy</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>NumPy</h3>
+                <p>Fundamental package for numerical computing with Python.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <img src="/placeholder.svg?height=48&width=48" alt="Power BI Logo" class="skill-logo" />
+                <h3>Power BI</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Power BI</h3>
+                <p>Business intelligence tool for data visualization.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card default">
+              <div class="skill-card-front">
+                <i data-lucide="network" class="icon-large accent-text"></i>
+                <h3>API REST</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>API REST</h3>
+                <p>Architectural style for building web services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section id="soft-skills" class="section-wrapper">
+      <div class="container">
+        <div class="section-text-center">
+          <h2>Soft Skills</h2>
+          <p>Essential interpersonal and personal attributes that complement my technical expertise.</p>
+        </div>
+        <div class="grid-4-cols">
+          <div class="skill-card-container">
+            <div class="skill-card soft-skill">
+              <div class="skill-card-front">
+                <i data-lucide="sparkles" class="icon-large soft-skill-icon"></i>
+                <h3>Problem Solving</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Problem Solving</h3>
+                <p>Ability to identify and resolve complex issues effectively.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card soft-skill">
+              <div class="skill-card-front">
+                <i data-lucide="message-square-text" class="icon-large soft-skill-icon"></i>
+                <h3>Effective Communication</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Effective Communication</h3>
+                <p>Clearly conveying ideas and information to diverse audiences.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card soft-skill">
+              <div class="skill-card-front">
+                <i data-lucide="users" class="icon-large soft-skill-icon"></i>
+                <h3>Teamwork</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Teamwork</h3>
+                <p>Collaborating effectively with others to achieve common goals.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card-container">
+            <div class="skill-card soft-skill">
+              <div class="skill-card-front">
+                <i data-lucide="crown" class="icon-large soft-skill-icon"></i>
+                <h3>Leadership</h3>
+              </div>
+              <div class="skill-card-back">
+                <h3>Leadership</h3>
+                <p>Guiding and motivating teams towards successful outcomes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-wrapper">
+      <div class="container">
+        <div class="section-text-center">
+          <h2>My Projects</h2>
+          <p>A selection of my personal and academic projects, showcasing my skills and interests.</p>
+        </div>
+        <div class="grid-3-cols">
+          <div class="card project-card">
+            <img
+              src="images/house-price.png"
+              alt="House Price Prediction App"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3>House Price Prediction App</h3>
+              <p>
+                Interactive web app for housing market trend analysis and visualization. Implemented user
+                authentication and role-based access for secure, personalized data.
+              </p>
+              <div class="badges">
+                <span class="badge project-badge">Python</span>
+                <span class="badge project-badge">Streamlit</span>
+                <span class="badge project-badge">FastAPI</span>
+                <span class="badge project-badge">Pandas</span>
+                <span class="badge project-badge">Matplotlib</span>
+              </div>
+              <a
+                href="https://github.com/pablo-lopez-martinez/House-price-prediction"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button outline-primary"
+              >
+                <i data-lucide="github" class="icon"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="card project-card">
+            <img
+              src="images/music-classifier.png"
+              alt="Music Genre Classifier"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3>Music Genre Classifier</h3>
+              <p>A classifier that identifies music genres using various artificial intelligence techniques.</p>
+              <div class="badges">
+                <span class="badge project-badge">Python</span>
+                <span class="badge project-badge">Machine Learning</span>
+                <span class="badge project-badge">Deep Learning</span>
+              </div>
+              <a
+                href="https://github.com/pablo-lopez-martinez/Music-genre-clasificator"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button outline-primary"
+              >
+                <i data-lucide="github" class="icon"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="card project-card">
+            <img
+              src="images/traffic-signal.png"
+              alt="Traffic Sign Detector"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3>Traffic Sign Detector</h3>
+              <p>
+                Built a real-time system to detect and classify road signs with high accuracy. Used shape and color
+                filters to reduce false positives and boost robustness.
+              </p>
+              <div class="badges">
+                <span class="badge project-badge">Python</span>
+                <span class="badge project-badge">OpenCV</span>
+                <span class="badge project-badge">NumPy</span>
+                <span class="badge project-badge">Computer Vision</span>
+              </div>
+              <a
+                href="https://github.com/pablo-lopez-martinez/Traffic-sign-detector"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button outline-primary"
+              >
+                <i data-lucide="github" class="icon"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section id="featured-project" class="section-wrapper">
+      <div class="container">
+        <div class="section-text-center">
+          <h2>Innovation in Action</h2>
+          <p>My most significant project during my academic career.</p>
+        </div>
+        <div class="card featured-project-card">
+          <div class="featured-project-image-container">
+            <img
+              src="/placeholder.svg?height=300&width=500"
+              alt="Molecular Docking Web App"
+              class="featured-project-image"
+            />
+          </div>
+          <div class="featured-project-content">
+            <h3>Molecular Docking Web App</h3>
+            <p>
+              Full-stack platform for molecular docking via natural language and 3D visualization. Integrated
+              AutoDock Vina, OpenAI API, and 3Dmol.js for real-time molecule rendering.
+            </p>
+            <div class="badges">
+              <span class="badge featured-badge">Django</span>
+              <span class="badge featured-badge">Docker</span>
+              <span class="badge featured-badge">AutoDock Vina</span>
+              <span class="badge featured-badge">OpenAI API</span>
+              <span class="badge featured-badge">3Dmol.js</span>
+            </div>
+            <p>The backend is built with Django and Docker for scalable, reproducible deployments.</p>
+            <a
+              href="http://repo-bot.citic.udc.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button primary"
+            >
+              <i data-lucide="external-link" class="icon"></i> View Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Pablo Lopez Martínez. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:pablolm.dev@gmail.com" class="footer-link">
+          <i data-lucide="mail" class="icon"></i> Email
+        </a>
+        <a
+          href="https://linkedin.com/in/pablo-lopez-martinez"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link"
+        >
+          <i data-lucide="linkedin" class="icon"></i> LinkedIn
+        </a>
+        <a
+          href="https://github.com/pablo-lopez-martinez"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link"
+        >
+          <i data-lucide="github" class="icon"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" type="module"></script>
 </body>
 </html>

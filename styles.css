@@ -326,13 +326,14 @@ p {
 }
 
 .profile-pic {
-  width: 300px; /* Larger profile picture */
-  height: 300px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #ffffff; /* White border */
+  /* Removed border: 5px solid #ffffff; */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   animation: zoomIn 1s ease-out;
+  object-position: 50% 10%;
 }
 
 .scroll-indicator {

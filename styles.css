@@ -752,7 +752,7 @@ p {
   background-clip: text;
   color: transparent;
   margin-bottom: 30px;
-  text-align: left; /* Alinea el título del proyecto destacado a la izquierda */
+  text-align: center; /* Cambiado de 'left' a 'center' */
 }
 
 .featured-content {
